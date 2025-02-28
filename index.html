@@ -1,1 +1,86 @@
-Welcome
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alen Dev</title>
+	<script src="https://kit.fontawesome.com/07f2d30e09.js" crossorigin="anonymous"></script>
+    <style>
+		html {
+			height:100%
+		}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(360deg, #002e84, #1e1e1e);
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0054cd;
+            box-shadow: 0 4px 8px rgb(141 164 235 / 50%);
+            margin-top: 20px;
+        }
+        .intro {
+            margin: 20px;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            max-width: 600px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .links a:hover {
+            color: #0054cd;
+            transform: scale(1.1);
+        }
+        .links i {
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+        .links a:hover i {
+            transform: rotate(10deg);
+        }
+        @media (max-width: 600px) {
+            .links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Profilee.png" alt="Profile Picture" class="profile-pic">
+        <div class="intro">
+            <p>Hi, I'm Alen Semanic, a technology enthusiast passionate about software development, problem-solving and organizing things..</p>
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/alensemanic/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://github.com/alenseeman" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            <a href="https://semantech.ba" target="_blank"><i class="fa-solid fa-globe"></i>My Website</a>
+            <a href="mailto:alen.semaniq@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
+        </div>
+    </div>
+</body>
+</html>
